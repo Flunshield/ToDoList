@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="test.js" async> </script>
     <title>To do list</title>
 </head>
 <body>
- <h1>Test123456789</h1>
+    <h1>To dolist</h1>
+    <form action="" method="post" class="form-example">
+        <div class="form-example">
+            <label>Ajouter</label>
+            <input type="text" name="ajouter" id="ajouter">
+            </br>
+            <label>Supprimer</label>
+            <input type="text" name="suprimer" id="suprimer">
+        </div>
+    </form>
+      
+    <button onclick = "Ajout();">Ajouter un mémo</button>
+    <button onclick = "Suprimer();">Suprimer un mémo</button>
+    <ul id="input1">
+    </ul>
 </body>
 </html>
