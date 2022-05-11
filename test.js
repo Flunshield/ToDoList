@@ -1,20 +1,20 @@
 
 const todolist = [];
+let valeur;
 
 function clean ()
 {
-    const newTache = document.createElement("li");
-    const tache = document.getElementById("input1");
-    let k = tache.appendChild(newTache);
+    document.getElementById("input1").innerHTML = " ";
 
     let lenght = todolist.length;
     console.log(lenght);
 
-    let b=0;
-        for (let i = 0; i < lenght; i++)
+        for (let i = 0 ; i < lenght; i++)
         {
-        k.innerHTML = todolist[b];
-        b++;
+            const newTache = document.createElement("li");
+            const tache = document.getElementById("input1");
+            let k = tache.appendChild(newTache);
+            k.innerHTML = todolist[i];
         }
         
     console.log(todolist);
@@ -23,23 +23,33 @@ function clean ()
 function Ajout()
 {
     // Sélectionner l'élément input et récupérer sa valeur
-    let valeur = document.getElementById("ajouter").value;
-
-    todolist.push(valeur);
-    clean();
-
+    valeur = document.getElementById("ajouter").value;
+    if (valeur == "" || valeur == " " || valeur == "  ")
+    {
+        console.log("vide");
+    }
+    else
+    {
+        todolist.push(valeur);
+        clean();
+    }
 }
 
 function Suprimer()
 {
-    let valeur = document.getElementById("suprimer").value;
-    let test = todolist.indexOf(valeur);
-    console.log(test);
-    todolist.splice(test, 1);
-    console.log(todolist);
-    
-    document.getElementById("input1").innerHTML = "";
-    
-    clean();
+    valeur = document.getElementById("suprimer").value;
 
+    if (valeur == "" || valeur == " " || valeur == "  ")
+    {
+        console.log("vide");
+    }
+    else
+    {
+        let test = todolist.indexOf(valeur);
+        console.log(test);
+        todolist.splice(test, 1);
+        console.log(todolist);
+        
+        clean();
+    }
 }
