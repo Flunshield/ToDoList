@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <script src="test.js" async> </script>
-    <title>To do list</title>
-</head>
-<body>
-    <h1>To dolist</h1>
-    <form action="" method="post" class="form-example">
-        <div class="form-example">
-            <label>Ajouter</label>
-            <input type="text" name="ajouter" id="ajouter">
-            </br>
-            <label>Supprimer</label>
-            <input type="text" name="suprimer" id="suprimer">
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+        <script src="test.js" async> </script>
+        <title>To do list</title>
+    </head>
+
+    <body>
+        <h1>To do liste</h1>
+        <div id="form">
+            <form action="" method="post" id="form-example">
+                <div id="example">
+                    <label>Ajouter ou supprimer</label>
+                    <input type="text" name="as" id="as">
+                </div>
+            </form>
+            <div id="button">
+                <button onclick = "Ajout();">Ajouter un mémo</button>
+                <button onclick = "Suprimer();">Suprimer un mémo</button>
+            </div>
+
+            <div id="test">
+                <ul id="input1">
+                </ul>
         </div>
-    </form>
-      
-    <button onclick = "Ajout();">Ajouter un mémo</button>
-    <button onclick = "Suprimer();">Suprimer un mémo</button>
-    <div id="test">
-        <ul id="input1">
-        </ul>
     </div>
-</body>
+    </body>
+
 </html>

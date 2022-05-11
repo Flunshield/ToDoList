@@ -23,7 +23,7 @@ function clean ()
 function Ajout()
 {
     // Sélectionner l'élément input et récupérer sa valeur
-    valeur = document.getElementById("ajouter").value;
+    valeur = document.getElementById("as").value;
     if (valeur == "" || valeur == " " || valeur == "  ")
     {
         console.log("vide");
@@ -37,15 +37,16 @@ function Ajout()
 
 function Suprimer()
 {
-    valeur = document.getElementById("suprimer").value;
-
+    valeur = document.getElementById("as").value;
+    
     if (valeur == "" || valeur == " " || valeur == "  ")
     {
         console.log("vide");
     }
     else
     {
-        let test = todolist.indexOf(valeur);
+        let test = 0;
+        test = todolist.indexOf(valeur);
         console.log(test);
         todolist.splice(test, 1);
         console.log(todolist);
