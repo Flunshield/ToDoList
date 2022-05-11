@@ -1,27 +1,28 @@
 body 
-{
-background-color: #E1A624;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
+    {
+        background-color: #E1A624;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 h1
-{
-    text-align: center;
-    color: #317AC1;
-}
+    {
+        text-align: center;
+        color: #317AC1;
+    }
 #form
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center
-}
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
 #button
-{
-    display: flex;
-}
+    {
+        display: flex;
+    }
 #example
-{
-    padding-bottom: 5%;
-    text-align: center;
-}
+    {
+        padding-bottom: 5%;
+        text-align: center;
+    }
