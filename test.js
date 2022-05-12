@@ -48,8 +48,15 @@ function Ajout()
             let test = 0;
             test = todolist.indexOf(valeur);
             console.log(test);
-            todolist.splice(test, 1);
-            console.log(todolist);
+            if(test == -1)
+            {
+                console.log("nok");
+            }
+            else{
+                todolist.splice(test, 1);
+                console.log(todolist);
+            }
+
             
             clean();
         }
